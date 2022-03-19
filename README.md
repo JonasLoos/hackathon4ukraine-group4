@@ -13,6 +13,18 @@ present them in a way that would be easy to read and access.
 
 react
 
+install:
+
+```sh
+npm i
+```
+
+start:
+
+```sh
+npm start
+```
+
 ### Mockups
 
 <img src="https://user-images.githubusercontent.com/33965649/159124072-71600bf2-eaea-452b-8723-3f6615baa789.png" width="500"/>
@@ -27,7 +39,7 @@ install:
 pip install -r requirements.txt
 ```
 
-start server in folder `backend` with:
+start REST API server in folder `backend` with:
 
 ```sh
 # development
