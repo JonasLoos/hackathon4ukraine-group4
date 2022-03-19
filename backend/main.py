@@ -16,8 +16,24 @@ def search():
     country = request.args.get('country', '')
     city = request.args.get('city', '')
     # TODO: query mongoDB
-    mongo_results = [{'url': 'https://test.com', 'name': 'Test', 'language': language, 'country': country, 'city': city}]  # just for testing
-    return {'results': mongo_results}
+    results = [{'url': 'https://test.com', 'name': 'Test', 'language': language, 'country': country, 'city': city}]  # just for testing
+    return {'results': results}
+
+
+@app.route('/regions/')
+def regions():
+    '''get available regions'''
+    # TODO: query mongoDB
+    results = ['Poland', 'Ukraine', 'Border Ukraine-Poland', 'London']  # just for testing
+    return {'regions': results}
+
+
+@app.route('/languages/')
+def languages():
+    '''get available languages'''
+    # TODO: query mongoDB
+    results = ['English', 'Ukrainian', 'Polish', 'German']  # just for testing
+    return {'languages': results}
 
 
 @app.route('/newentry/')
