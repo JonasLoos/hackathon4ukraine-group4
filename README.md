@@ -27,8 +27,12 @@ install:
 pip install -r requirements.txt
 ```
 
-start development server in folder `backend` with:
+start server in folder `backend` with:
 
 ```sh
+# development
 export FLASK_APP=main.py; flask run
+
+# production
+waitress-serve --port=80 "main:app"
 ```
