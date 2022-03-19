@@ -16,9 +16,14 @@ def search():
     country = request.args.get('country', '')
     city = request.args.get('city', '')
     # TODO: query mongoDB
-    return {'results': ['...']}
+    mongo_results = [{'url': 'https://test.com', 'name': 'Test', 'language': language, 'country': country, 'city': city}]  # just for testing
+    return {'results': mongo_results}
 
 
-@app.route('/newentry')
+@app.route('/newentry/')
 def newentry():
-    return {}
+    keys = ['url', 'name', 'language', 'country', 'city']
+    data = {key: request.args.get(key, '') for key in keys}
+    # TODO: insert into mongodb (including key "not verified")
+    success = all(data.values())  # just for testing
+    return {'success': success}
