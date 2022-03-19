@@ -1,17 +1,13 @@
-from flask import Flask
+import os
+from flask import Flask, send_from_directory
 from flask import request
 from pymongo import MongoClient
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='../frontend/build')
 client = MongoClient()
 # db = client['database-name']
 
-@app.route('/')
-def test():
-    return {'test': 42}
-
-
-@app.route('/search/')
+@app.route('/api/search/')
 def search():
     '''search for entries matching the given filters'''
     language = request.args.get('language', '')
@@ -22,7 +18,7 @@ def search():
     return {'results': results}
 
 
-@app.route('/regions/')
+@app.route('/api/regions/')
 def regions():
     '''get available regions'''
     # TODO: query mongoDB
@@ -30,7 +26,7 @@ def regions():
     return {'regions': results}
 
 
-@app.route('/languages/')
+@app.route('/api/languages/')
 def languages():
     '''get available languages'''
     # TODO: query mongoDB
@@ -38,10 +34,19 @@ def languages():
     return {'languages': results}
 
 
-@app.route('/newentry/')
+@app.route('/api/newentry/')
 def newentry():
     keys = ['url', 'name', 'language', 'country', 'city']
     data = {key: request.args.get(key, '') for key in keys}
     # TODO: insert into mongodb (including key "not verified")
     success = all(data.values())  # just for testing
     return {'success': success}
+
+# Serve React App
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def serve(path):
+    if path != "" and os.path.exists(app.static_folder + '/' + path):
+        return send_from_directory(app.static_folder, path)
+    else:
+        return send_from_directory(app.static_folder, 'index.html')
