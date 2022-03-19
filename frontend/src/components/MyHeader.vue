@@ -11,7 +11,7 @@
           <a className="text-sm text-black" href="#">help us</a>
           <a className="text-sm text-black" href="#">Knolegebase</a>
         </div>
-        <div className="bg-red-500">
+        <div className="bg-red-400">
           <div className="px-20 py-5">Logo</div>
         </div>
         <div className="flex">
@@ -25,17 +25,3 @@
     </nav>
   </div>
 </template>
-
-<script>
-export default {
-  name: "Test",
-  created() {},
-  data() {
-    return {};
-  },
-  props: {},
-  methods: {},
-};
-</script>
-
-<style lang="scss" scoped></style>
