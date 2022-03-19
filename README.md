@@ -19,4 +19,16 @@ react
 
 ## Backend
 
-python
+technologies: python with flask, mongoDB
+
+install:
+
+```sh
+pip install -r requirements.txt
+```
+
+start development server in folder `backend` with:
+
+```sh
+export FLASK_APP=main.py; flask run
+```
