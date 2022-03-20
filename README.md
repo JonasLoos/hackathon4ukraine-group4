@@ -1,4 +1,4 @@
-This repo was created during the [Hackathon4Ukraine](https://www.eventbrite.co.uk/e/hackathon4ukraine-tickets-293387910137?keep_tld=1). 
+This repo was created during the [Hackathon4Ukraine](https://www.eventbrite.co.uk/e/hackathon4ukraine-tickets-293387910137?keep_tld=1) on 2022/03/19-20.
 
 ## [Frontend on Netlify](https://determined-booth-c58f9d.netlify.app/)
 ## [Figma UX draft](https://www.figma.com/file/xdWMsBGT1GOHQVgLNdTmnp/prepkit.help?node-id=0%3A1)
