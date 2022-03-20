@@ -16,7 +16,12 @@ import { useState } from 'react'
 
 import('./style/tailwind.css')
 
+function getData(callback) {
+  fetch('/api/search/').then(callback)
+}
+
 function renderPage(page) {
+  getData(console.log)
   let ret = (
     <div>
       <TagPanel></TagPanel>

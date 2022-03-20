@@ -6,6 +6,8 @@ from pymongo import MongoClient
 app = Flask(__name__, static_folder='../frontend/build')
 client = MongoClient()
 # db = client['database-name']
+data = [{'name':'test1', 'title': 'Test 1', 'article': 'This is test 1.'}]  # just for testing
+
 
 @app.route('/api/search/')
 def search():
@@ -14,7 +16,8 @@ def search():
     country = request.args.get('country', '')
     city = request.args.get('city', '')
     # TODO: query mongoDB
-    results = [{'url': 'https://test.com', 'name': 'Test', 'language': language, 'country': country, 'city': city}]  # just for testing
+    # results = [{'url': 'https://test.com', 'name': 'Test', 'language': language, 'country': country, 'city': city}]  # just for testing
+    results = data  # just for testing
     return {'results': results}
 
 
@@ -36,9 +39,11 @@ def languages():
 
 @app.route('/api/newentry/')
 def newentry():
-    keys = ['url', 'name', 'language', 'country', 'city']
-    data = {key: request.args.get(key, '') for key in keys}
+    # keys = ['url', 'name', 'language', 'country', 'city']
+    keys = ['name', 'title', 'article']
+    res = {key: request.args.get(key, '') for key in keys}
     # TODO: insert into mongodb (including key "not verified")
+    data += res,
     success = all(data.values())  # just for testing
     return {'success': success}
 
