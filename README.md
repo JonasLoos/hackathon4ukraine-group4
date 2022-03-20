@@ -9,6 +9,14 @@ offering free or discounted services for Ukrainians. Provide a way to dynamicall
 gather information about these services and what they have to offer, as well as
 present them in a way that would be easy to read and access.
 
+# Code
+
+start:
+
+```sh
+./startup.sh
+```
+
 ## Frontend
 
 react
