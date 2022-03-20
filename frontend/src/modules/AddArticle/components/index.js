@@ -11,7 +11,7 @@ const AddArticle = ({
   handleSubmit = (e) => {
     console.log(e)
     fetch('api/newentry/?name=' + encodeURIComponent(e.name) + '&title=' + encodeURIComponent(e.title) + '&article=' + encodeURIComponent(e.article))
-      .then(res => console.log(res))
+      .then(res => console.log(res, res.items))
   },
   tagList = [],
 }) => {

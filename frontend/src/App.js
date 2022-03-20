@@ -21,7 +21,7 @@ function getData(callback) {
 }
 
 function renderPage(page) {
-  getData(console.log)
+  getData(res => console.log(res, res.items))
   let ret = (
     <div>
       <div className='min-h-[80vh]'>
