@@ -14,6 +14,8 @@ import { LOCALE_MAP } from './consts'
 import Myheader from './components/MyHeader.js'
 import { useState } from 'react'
 
+import('./style/tailwind.css')
+
 function renderPage(page) {
   let ret = (
     <div>
