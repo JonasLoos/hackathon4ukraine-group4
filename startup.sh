@@ -3,7 +3,7 @@ git pull
 
 echo "########################## build react app ##########################"
 cd frontend
-npm run build
+npm i && npm run build || exit
 
 echo "########################## start server ##########################"
 cd ../backend
