@@ -45,7 +45,7 @@ def newentry():
     # TODO: insert into mongodb (including key "not verified")
     global data  # just for testing
     data += res,  # just for testing
-    success = all(data.values())  # just for testing
+    success = all(res.values())  # just for testing
     return {'success': success}
 
 
