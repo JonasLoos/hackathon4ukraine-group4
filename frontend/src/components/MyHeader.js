@@ -17,9 +17,9 @@ export default function Myheader() {
           </div>
           <div className="flex">
             <div className="flex-row">
-              <span className="fi fi-pl fib px-2">lang1</span>
-              <span className="fi fi-ua fib px-2">lang12</span>
-              <span className="fi fi-gr fib px-2">lang13</span>
+              <span className="fi fi-pl fib px-2"><img src="./images/ua.svg" alt="ua"></img></span>
+              <span className="fi fi-ua fib px-2"><img src="./images/gb.svg" alt="gb" ></img></span>
+              <span className="fi fi-gr fib px-2"><img src="./images/ru.svg" alt="ru"></img></span>
             </div>
           </div>
         </div>
