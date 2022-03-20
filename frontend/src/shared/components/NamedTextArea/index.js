@@ -2,16 +2,19 @@ import React from "react";
 import { useField } from "formik";
 
 import "./index.scss";
+import { FormattedMessage } from "react-intl";
 
-const NamedTextArea = ({ label, ...props }) => {
+const NamedTextArea = ({ labelId, ...props }) => {
   const [field] = useField(props);
 
   const { name, value, onChange } = field;
 
   return (
     <>
-      <div className="input-wrapper">
-        <div className="label">{label}:</div>
+      <div className="textarea-wrapper">
+        <div className="label">
+          <FormattedMessage id={labelId} />
+        </div>
         <textarea
           className="input"
           name={name}
