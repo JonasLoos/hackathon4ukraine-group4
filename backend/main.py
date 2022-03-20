@@ -43,7 +43,8 @@ def newentry():
     keys = ['name', 'title', 'article']
     res = {key: request.args.get(key, '') for key in keys}
     # TODO: insert into mongodb (including key "not verified")
-    data += res,
+    global data  # just for testing
+    data += res,  # just for testing
     success = all(data.values())  # just for testing
     return {'success': success}
 
