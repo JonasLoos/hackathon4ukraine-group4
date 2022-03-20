@@ -1,0 +1,43 @@
+{
+  "layout.knowledge_base": "База даних",
+  "layout.contact_us": "Зв’язатись з нами",
+  "layout.want_help": "Бажаєш допомогти?",
+
+  "common.button.send": "Відправити",
+
+  "home.title": "Будь проінформований. Будь в безпеці",
+
+  "company.title": "Ти можеш отримати допомогу від:",
+
+  "first_step.title": "Ми тут щоб допомогти",
+
+
+  "want_help.home.title": "Добре бути корисним",
+  "want_help.home.subtitle": "Що можу зробити для інших?",
+  "want_help.home.add_org": "Додати власну організацію в базу",
+  "want_help.home.join": "Долучитись до нас як волонтер",
+  "want_help.home.write": "Додати до нашої бази даних",
+
+  "want_help.add.title": "Дуже добре, що ти хочеш допомогти",
+  "want_help.add.subtitle": "Будь-ласка, заповніть форму. Ми переглянемо інформацію та поширимо її у світ.",
+  "want_help.join.subtitle": "Будь-ласка, заповніть форму. Ми переглянемо її та дамо відповідь.",
+
+  "want_help.add_org.form.company_name": "Назва компанії",
+  "want_help.add_org.form.address": "Адреса",
+  "want_help.add_org.form.phone": "Номер телефону",
+  "want_help.add_org.form.email": "Email (електронна адреса)",
+  "want_help.add_org.form.tags": "Обрати теги",
+  "want_help.add_org.form.description": "Опис",
+
+  "want_help.add_article.form.name": "Ваше ім’я",
+  "want_help.add_article.form.title": "Заголовок",
+  "want_help.add_article.form.tags": "Обрати теги",
+  "want_help.add_article.form.article": "Стаття",
+
+  "want_help.join_us.form.name": "Ваше ім’я",
+  "want_help.join_us.form.dob": "Возраст",
+  "want_help.join_us.form.skills": "Обрати вміння",
+  "want_help.join_us.form.languages": "Володіння мовами",
+  "want_help.join_us.form.few_words": "Декілька слів про вас"
+}
+
