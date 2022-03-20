@@ -19,7 +19,7 @@ start:
 
 ## Frontend
 
-react
+We use react.
 
 install:
 
@@ -39,7 +39,7 @@ npm start
 
 ## Backend
 
-technologies: python with flask, mongoDB
+We use python with flask and mongoDB.
 
 install:
 
