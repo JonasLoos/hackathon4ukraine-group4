@@ -1,6 +1,6 @@
 export default function TagPanel() {
   return (
-    <div className='flex justify-center h-[80vh]'>
+    <div className='flex justify-center '>
       <div className='flex-col '>
         <div className='my-24'>
           <h1 className='text-2xl drop-shadow-md  flex justify-center '>

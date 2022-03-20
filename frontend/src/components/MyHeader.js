@@ -3,12 +3,7 @@ export default function Myheader(props) {
     <div>
       <nav className='relative w-full flex flex-wrap items-center justify-between bg-white-100 text-gray-500 hover:text-gray-700 focus:text-gray-700 shadow-sm p-6'>
         <div className='container-fluid w-full flex flex-wrap items-center justify-between'>
-          <div
-            className={
-              'container-fluid flex flex-col text-left ' +
-              (props.noLogo && 'md:hidden')
-            }
-          >
+          <div className={'container-fluid flex flex-col text-left'}>
             <a
               className='text-sm text-black'
               href='#'
@@ -39,14 +34,15 @@ export default function Myheader(props) {
             </a>
           </div>
           {!props.noLogo && (
-            <div className='bg-gray-400 '>
-              <a
-                className='px-6 py-5 text-lg'
-                onClick={() => props.onPageChange('')}
-                href='#'
-              >
-                <span>PREPKIT</span>
-                <span className='text-sm'>.help</span>
+            <div className=''>
+              <a className='' onClick={() => props.onPageChange('')} href='#'>
+                {/* <span>PREPKIT</span>
+                <span className='text-sm'>.help</span> */}
+                <img
+                  src='./images/logo.png'
+                  className='h-20'
+                  alt='prepkit'
+                ></img>
               </a>
             </div>
           )}
