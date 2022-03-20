@@ -1,5 +1,7 @@
 This repo was created during the [Hackathon4Ukraine](https://www.eventbrite.co.uk/e/hackathon4ukraine-tickets-293387910137?keep_tld=1). 
 
+## [Frontend on Netlify](https://determined-booth-c58f9d.netlify.app/)
+## [Figma UX draft](https://www.figma.com/file/xdWMsBGT1GOHQVgLNdTmnp/prepkit.help?node-id=0%3A1)
 ## Goal
 
 The goal is to create a public website aggregating information for Ukrainian refugees:
@@ -9,7 +11,6 @@ offering free or discounted services for Ukrainians. Provide a way to dynamicall
 gather information about these services and what they have to offer, as well as
 present them in a way that would be easy to read and access.
 
-## [Figma UX draft](https://www.figma.com/file/xdWMsBGT1GOHQVgLNdTmnp/prepkit.help?node-id=0%3A1)
 
 ![prepkit](./project_files/prepkit-01.PNG)
 ![prepkit](./project_files/prepkit-02.PNG)
