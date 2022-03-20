@@ -24,9 +24,13 @@ function renderPage(page) {
   getData(console.log)
   let ret = (
     <div>
-      <TagPanel></TagPanel>
-      <ButtonList></ButtonList>
-      <Companies></Companies>
+      <div className='min-h-[80vh]'>
+        <TagPanel></TagPanel>
+        <ButtonList></ButtonList>
+      </div>
+      <div class='mb-24'>
+        <Companies></Companies>
+      </div>
     </div>
   )
   switch (page) {
