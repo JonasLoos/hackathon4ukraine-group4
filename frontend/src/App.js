@@ -22,7 +22,6 @@ function renderPage(page) {
       <TagPanel></TagPanel>
       <ButtonList></ButtonList>
       <Companies></Companies>
-      <MyFooter></MyFooter>
     </div>
   )
   switch (page) {
@@ -50,6 +49,9 @@ function App() {
     <IntlProvider locale={locale} messages={LOCALE_MAP[locale]}>
       <Myheader onPageChange={setPage}></Myheader>
       {renderPage(page)}
+      <MyFooter>
+        <Myheader onPageChange={setPage} noLogo={true}></Myheader>
+      </MyFooter>
     </IntlProvider>
   )
 }

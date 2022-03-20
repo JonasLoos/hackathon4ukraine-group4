@@ -1,14 +1,14 @@
 export default function TagPanel() {
   return (
-    <div className='flex justify-center'>
+    <div className='flex justify-center h-[80vh]'>
       <div className='flex-col '>
-        <div className='py-10'>
-          <h1 className='text-lg  flex justify-center '>
+        <div className='my-24'>
+          <h1 className='text-2xl drop-shadow-md  flex justify-center '>
             Be Informed. Stay Safe
           </h1>
         </div>
         <div className='flex flex-row my-5'>
-          <div className='flex space-x-2 justify-center '>
+          <div className='flex space-x-2 justify-center text-center'>
             <div>
               <button
                 type='button'
