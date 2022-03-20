@@ -9,9 +9,29 @@ offering free or discounted services for Ukrainians. Provide a way to dynamicall
 gather information about these services and what they have to offer, as well as
 present them in a way that would be easy to read and access.
 
+# Code
+
+start:
+
+```sh
+./startup.sh
+```
+
 ## Frontend
 
-react
+We use react.
+
+install:
+
+```sh
+npm i
+```
+
+start:
+
+```sh
+npm start
+```
 
 ### Mockups
 
@@ -19,7 +39,7 @@ react
 
 ## Backend
 
-technologies: python with flask, mongoDB
+We use python with flask and mongoDB.
 
 install:
 
@@ -27,7 +47,7 @@ install:
 pip install -r requirements.txt
 ```
 
-start server in folder `backend` with:
+start REST API server in folder `backend` with:
 
 ```sh
 # development

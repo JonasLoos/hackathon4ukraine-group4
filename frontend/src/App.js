@@ -20,6 +20,7 @@ function App() {
       <ButtonList></ButtonList>
       <Companies></Companies>
       <MyFooter></MyFooter>
+      <div></div>
     </IntlProvider>
   );
 
