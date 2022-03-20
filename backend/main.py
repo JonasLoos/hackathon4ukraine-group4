@@ -42,11 +42,11 @@ def newentry():
     success = all(data.values())  # just for testing
     return {'success': success}
 
-# Serve React App
+
+# Serve React App if none of the above entries matched
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
 def serve(path):
-    if path != "" and os.path.exists(app.static_folder + '/' + path):
-        return send_from_directory(app.static_folder, path)
-    else:
-        return send_from_directory(app.static_folder, 'index.html')
+    if path == "" or not os.path.exists(app.static_folder + '/' + path):
+        path = 'index.html'
+    return send_from_directory(app.static_folder, path)
